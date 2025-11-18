@@ -319,5 +319,15 @@
         menu.style.height = `calc(100vh - ${height}px)`;
     }
     window.addEventListener("resize", setMenuPadding);
+    const infoBody = document.querySelector(".info__body");
+    if (infoBody) {
+        const infoTables = infoBody.querySelectorAll("table");
+        infoTables.forEach((table => {
+            const wrapper = document.createElement("div");
+            wrapper.className = "info__table";
+            table.parentNode.insertBefore(wrapper, table);
+            wrapper.appendChild(table);
+        }));
+    }
     spollers();
 })();
