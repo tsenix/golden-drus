@@ -328,6 +328,10 @@
             table.parentNode.insertBefore(wrapper, table);
             wrapper.appendChild(table);
         }));
+        const headers = infoBody.querySelectorAll("h1");
+        headers.forEach(((header, index) => {
+            if (index === 0) header.classList.add("info__title");
+        }));
     }
     spollers();
 })();

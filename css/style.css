@@ -978,11 +978,6 @@ html {
   .info__body h2 {
     font-size: 40px
   }
-  .info img {
-    float: left;
-    margin-right: 30px;
-    width: 470px
-  }
   .info p {
     clear: both
   }
