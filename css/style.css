@@ -817,7 +817,10 @@ html {
   }
   .header__top {
     height: auto;
-    gap: 30px
+    gap: 20px
+  }
+  .header__column-left {
+    gap: 20px
   }
   .header__burger {
     display: none
@@ -835,7 +838,7 @@ html {
   }
   .header__nav-item {
     margin: -10px 0;
-    padding: 20px 8px;
+    padding: 20px 7px;
     position: relative;
     cursor: pointer
   }
@@ -848,7 +851,7 @@ html {
     visibility: visible
   }
   .header__nav-item span {
-    font-size: 18px;
+    font-size: 17px;
     white-space: nowrap;
     color: #27a800;
     transition: all .5s ease
@@ -1065,7 +1068,7 @@ html {
 }
 @media (min-width:79.99875em) {
   ._container {
-    width: 1200px
+    width: 1240px
   }
   .header__nav-item {
     margin: 0
