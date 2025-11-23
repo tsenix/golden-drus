@@ -308,6 +308,7 @@ html {
   transform: scale(1)
 }
 .menu__item {
+  width: 100%;
   font-size: 26px;
   text-align: center;
   color: #27a800
@@ -319,6 +320,7 @@ html {
   display: none
 }
 .menu__title {
+  width: 100%;
   font-size: 26px;
   text-align: center;
   color: #27a800
@@ -335,6 +337,7 @@ html {
   padding: 30px 0 0
 }
 .menu__body-item {
+  width: 100%;
   font-size: 22px;
   text-align: center;
   color: #fff
@@ -828,12 +831,11 @@ html {
   .header__nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 0 15px
+    justify-content: center
   }
   .header__nav-item {
     margin: -10px 0;
-    padding: 20px 0;
+    padding: 20px 8px;
     position: relative;
     cursor: pointer
   }
@@ -856,10 +858,9 @@ html {
     z-index: 10;
     left: 0;
     top: 100%;
-    padding: 20px;
+    padding: 15px 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     background-color: #27a800;
     border-radius: 8px;
     opacity: 0;
@@ -878,8 +879,10 @@ html {
     background-color: #27a800
   }
   .header__submenu-item {
+    padding: 5px 20px;
     font-size: 16px;
     color: #fff;
+    white-space: nowrap;
     transition: color .5s ease
   }
   .header__submenu-item.active {
@@ -887,7 +890,8 @@ html {
     cursor: default
   }
   .header__submenu-item:hover:not(.active) {
-    color: #caffbb
+    background-color: #caffbb;
+    color: #27a800
   }
   .header__social:hover svg {
     fill: #caffbb
