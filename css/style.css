@@ -800,6 +800,31 @@ html {
   -o-object-fit: cover;
   object-fit: cover
 }
+.calculator {
+  position: fixed;
+  z-index: 20;
+  right: 20px;
+  bottom: 50px;
+  width: 82px;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background-color: rgba(39,168,0,.8);
+  border-radius: 27px;
+  transition: all .5s ease
+}
+.calculator img {
+  width: 24px;
+  height: 24px
+}
+.calculator span {
+  font-size: 12px;
+  text-align: center;
+  color: #fff
+}
 @media (min-width:61.99875em) {
   ._container {
     padding: 0;
@@ -1064,6 +1089,13 @@ html {
   }
   .contacts__map {
     height: 320px
+  }
+  .calculator {
+    right: 40px;
+    bottom: 70px
+  }
+  .calculator:hover {
+    background-color: #27a800
   }
 }
 @media (min-width:79.99875em) {
