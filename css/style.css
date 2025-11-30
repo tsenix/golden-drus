@@ -804,7 +804,7 @@ html {
   position: fixed;
   z-index: 20;
   right: 20px;
-  bottom: 50px;
+  bottom: 20px;
   width: 82px;
   height: 82px;
   display: flex;
@@ -1092,7 +1092,7 @@ html {
   }
   .calculator {
     right: 40px;
-    bottom: 70px
+    bottom: 40px
   }
   .calculator:hover {
     background-color: #27a800
