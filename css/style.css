@@ -514,8 +514,7 @@ html {
 }
 .info__table {
   margin-bottom: 30px;
-  overflow-x: auto;
-  padding-bottom: 5px
+  overflow-x: hidden
 }
 .info img {
   margin-bottom: 30px;
@@ -551,13 +550,14 @@ html {
   list-style-type: disc
 }
 .info table {
-  min-width: 100%;
+  width: 100%;
   border-collapse: collapse
 }
 .info table td,
 .info table th {
-  padding: 12px 15px;
-  min-width: 270px
+  padding: 8px 5px;
+  font-size: 12px;
+  word-break: break-all
 }
 .info table th {
   text-align: left;
@@ -824,6 +824,14 @@ html {
   font-size: 12px;
   text-align: center;
   color: #fff
+}
+@media (min-width:29.99875em) {
+  .info table td,
+  .info table th {
+    padding: 12px 15px;
+    font-size: 16px;
+    word-break: normal
+  }
 }
 @media (min-width:61.99875em) {
   ._container {
